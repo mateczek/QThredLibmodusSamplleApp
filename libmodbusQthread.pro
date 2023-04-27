@@ -18,7 +18,10 @@ HEADERS += \
     mainwindow.h \
     modbusengine.h \
     modbusworker.h
+#msys2
 LIBS+=-llibmodbus
+#linux nie chciało się skompilować na ubuntu bo inaczej widzi libkę
+#LIBS+=-lmodbus
 FORMS += \
     mainwindow.ui
 # Default rules for deployment.
