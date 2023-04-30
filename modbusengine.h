@@ -28,7 +28,7 @@ signals:
     void modbusOk(bool ok);
     void _writeBit(int, int);
     void _writeWord(int adress,int value);
-public slots:
+public:
     void writeBit(int adr,int val){ emit _writeBit(adr,val);}
     void writeWord(int adress,int value){emit _writeWord(adress,value);}
 
